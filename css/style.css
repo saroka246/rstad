@@ -272,7 +272,15 @@ input[type=search]::placeholder{
     position: relative;
     z-index:1;
 }
-
+.big-plate:hover{
+    opacity: 0.8;
+}
+.small-plate:hover{
+    opacity: 0.8;
+}
+.icons-style:hover{
+    opacity:.5;
+}
 .slider-item-container{
     display: flex;
     flex-direction: column;

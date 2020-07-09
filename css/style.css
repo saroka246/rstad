@@ -434,8 +434,8 @@ input[type=search]::placeholder{
 }
 .big-plate-button:hover{
     background-color: transparent;
-    border:2px solid #dd0712;
-    color:#dd0712;
+    border:2px solid #fff;
+    color:#fff;
 }
 .small-plate-title-block{
     margin: 55px 0 0 40px;
@@ -556,9 +556,9 @@ input[type=search]::placeholder{
     margin-left:20px;
 }
 .test-button:hover{
-    border: 2px solid #de0713;
+    border: 2px solid #fff;
     background: transparent;
-    color:#de0713;
+    color:#fff;
 }
 .qa-slider-wrapper{
     height:731px;

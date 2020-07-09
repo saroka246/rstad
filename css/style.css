@@ -568,13 +568,13 @@ input[type=search]::placeholder{
 .qa-slider-container{
     height:inherit;
     width: 1230px;
+    padding-top:70px;
 }
 .qa-title{
     color: #14427a;
     font-family: "PF BeauSans Pro - Regular";
     font-size: 36px;
-    font-weight: 400;
-    margin-top:70px;
+    font-weight: 400;  
     margin-left:15px;
 }
 .qa-slider{

@@ -1,0 +1,1270 @@
+
+@font-face {
+font-family: 'PF BeauSans Pro - Bold';
+src: url('PFBeauSansPro-Bold.eot');
+src: url('PFBeauSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+url('PFBeauSansPro-Bold.woff') format('woff'),
+url('PFBeauSansPro-Bold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF BeauSans Pro - Italic';
+    src: url(fonts/);
+    src:
+        url('PFBeauSansPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('PFBeauSansPro-Italic.woff') format('woff'),
+        url('PFBeauSansPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+
+@font-face {
+    font-family: 'PF BeauSans Pro - Regular';
+    src: url('PFBeauSansPro-Regular.eot');
+    src: local('PFBeauSansPro-Regular'),
+        url('PFBeauSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PFBeauSansPro-Regular.woff') format('woff'),
+        url('PFBeauSansPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block;
+    padding: 0;
+}
+input, textarea, select {
+    -webkit-appearance: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; 
+    margin:0;
+    overflow-x: hidden;
+}
+
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; 
+padding: 0;
+  border: 0;}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none;
+    margin-block-start:0;
+    margin-block-end:0;
+    
+}
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+/*-------------------------------------------------*/
+
+.container{
+    max-width: 1230px;
+    padding: 0 15px;
+    height: inherit;
+}
+.header-nav-wrapper{
+    background-color: #f1f2f6;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    max-width:100%
+}
+.nav-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 60px;
+    margin-block-start:0;
+    margin-block-end:0;
+    padding-inline-start:0;
+    width: inherit;
+}
+.nav-item{
+    color: #14427a;
+    font-family: 'PF BeauSans Pro - Regular';
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 25px;
+    margin-top:25px;
+    display: table;
+}
+.nav-item>a:hover{
+    color:#de0713;
+}
+.nav-item:hover:after{
+    display: block;
+    content:'';
+    width:100%;
+    height:2px;
+    background-color: #de0713;
+    margin-top:16px;
+}
+.nav-item_active>a{
+    color:#de0713;
+}
+.nav-item_active{
+    margin-top:25px;
+    display: table;
+}
+.nav-item_active:after{
+    display: block;
+    content:'';
+    width:100%;
+    height:2px;
+    background-color: #de0713;
+    margin-top:16px;
+}
+.hat-wrapper{
+    height:100px;
+    display: flex;
+    justify-content: center;
+}
+.hat-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+}
+.form-item{
+    margin-left:175px;
+}
+input[type=submit]{
+    background-image: url(../img/hat/search-icon.png);
+    height:14px;
+    width:14px;
+    border: none;
+    margin-left:100px;
+}
+input[type=search]{
+    border:none;
+    background-color: #f1f2f6;
+    color: #777e8a;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 15px;
+    font-weight: 400;
+    width: 170px;
+}
+input[type=search]::placeholder{
+    
+    color: #777e8a;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 15px;
+    font-weight: 400;
+}
+.hat-form{
+    width: 320px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #f1f2f6;
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 0;
+}
+.icons-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    margin: 0 53px;
+}
+.icons-style{
+    margin: 0 18px;
+}
+.phone-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.phone-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left:13px;
+}
+.phone-item{
+    color: #14427a;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 22px;
+    font-weight: 700;
+}
+.email-item{
+    color: #14427a;
+    font-family: "PF BeauSans Pro - Italic";
+    font-size: 15px;
+    text-decoration: underline;
+    margin-top:6px;
+}
+.slider-wrapper{
+    height:280px;
+    background-color: #14427b;
+}
+.slider-item{
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/slider/slider-item-bg.png);
+    background-size: cover;
+    height: 280px;
+    z-index:1;
+}
+.slider{
+    position: relative;
+    z-index:1;
+}
+.card-slider{
+    position: relative;
+    z-index:1;
+}
+.qa-slider{
+    position: relative;
+    z-index:1;
+}
+
+.slider-item-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    
+}
+.slider-item-title-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.slider-item-title{
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.slider-item-subtitle{
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Italic";
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-top:18px;
+}
+.slider .slick-track{
+    display: flex;
+}
+.slider .slick-list{
+    overflow: hidden;
+}
+.slider .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:-50px;
+    z-index: 1;
+    position: relative;
+    padding-inline-start:0;
+}
+.slider .slick-dots li{
+    margin: 0 22px;
+    
+}
+.slider .slick-dots li button{
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    font-size:0;
+    border:none;
+    border-radius: 50%; 
+}
+.slider .slick-dots li.slick-active button{
+    width: 9px;
+    height: 9px;
+    background: transparent;
+    border: 2px solid #ffffff;
+}
+.standard-title{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+}
+.standard-title-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: inherit;
+}
+.standard-title-items{
+    color: #14427a;
+    font-family: "PF BeauSans Pro - Italic";
+    font-size: 36px;
+    margin-left:39px;
+}
+.standard-title-img{
+    margin-left:54px;
+}
+.plate-deck-wrapper{
+    height: 670px;
+    background-color: #f6f8fb;
+    background-image: url(../img/plate-deck/plate-deck-bg.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.plate-deck-container{
+    padding: 70px 0;
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+}
+.big-plate{
+    width:50%;
+    height: 99.25%;
+    margin:2px 2px 10px 2px;  
+    background-image: url(../img/plate-deck/big-plate-bg.png);
+    padding:55px 0 46px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.plate-deck-column{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.small-plate{ 
+    height: 50%;
+    margin:2px;
+    padding
+}
+.big-plate-header-block{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.big-plate-title-block{
+    display: flex;
+    flex-direction: column;
+    margin-left:20px;
+}
+.big-plate-title{
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.big-plate-date{
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Italic";
+    font-size: 15px;
+    margin-bottom: 21px;
+}
+.big-plate-subtitle{
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Italic";
+    font-size: 16px;
+    margin-top:153px;
+}
+.big-plate-button{
+    width: 185px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #dd0712;
+    margin-top:45px;
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    text-align: center;
+    padding: 17px 0;
+}
+.big-plate-button:hover{
+    background-color: transparent;
+    border:2px solid #dd0712;
+    color:#dd0712;
+}
+.small-plate-title-block{
+    margin: 55px 0 0 40px;
+}
+.small-plate-title{
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.card-slider-wrapper{
+    height:620px;
+    display: flex;
+    justify-content: center;
+}
+.card-slider-container{
+    padding:68px 15px 0 15px;
+    width: 1230px;
+}
+.card{
+    width:220px;
+    height: 414px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 12.5px;
+}
+.card-slider{
+    position: relative;
+}
+.card-slider .slick-track{
+    display: flex;
+}
+.card-slider .slick-list{
+    overflow: hidden;
+}
+.card-slider .slick-arrow{
+    position: absolute;
+    z-index: 1;
+    top:100%;
+    font-size: 0;
+    width: 16px;
+    height: 26px;
+    margin-top:40px;
+}
+.card-slider .slick-arrow.slick-prev{
+    background-image: url(../img/card-slider/arrow-lft.png);
+    background-color:transparent;
+    left:48%;
+}
+.card-slider .slick-arrow.slick-next{
+    background-image: url(../img/card-slider/arrow-rgt.svg);
+    right:48%;
+    background-color:transparent;
+}
+.card-date{
+    font-family: "PF BeauSans Pro - Italic";
+    font-size: 15px;
+    color: #757e8a;
+}
+.card-title{
+    color: #14427a;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.card-subtitle{
+    color: #757e8a;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 16px;
+    font-weight: 400;
+}
+.test{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/test/test-bg.png) ;
+    background-size: cover;
+    background-color: #14427a;
+}
+.test-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+.test-title{
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 30px;
+    font-weight: 700;
+}
+.test-subtitle{
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Italic";
+    font-size: 16px;
+    margin-left:56px;
+}
+.test-subtitle span{
+    font-family: "PF BeauSans Pro - Regular";
+    font-weight: 700;
+}
+.test-button{
+    border-radius: 25px;
+    background-color: #de0713;
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    width: 185px;
+    height: 50px;
+    margin-left:20px;
+}
+.test-button:hover{
+    border: 2px solid #de0713;
+    background: transparent;
+    color:#de0713;
+}
+.qa-slider-wrapper{
+    height:731px;
+    display: flex;
+    justify-content: center;
+}
+.qa-slider-container{
+    height:inherit;
+    width: 1230px;
+}
+.qa-title{
+    color: #14427a;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 36px;
+    font-weight: 400;
+    margin-top:70px;
+    margin-left:15px;
+}
+.qa-slider{
+    position: relative;
+    margin-top:40px;
+}
+.qa-slider .slick-track{
+    display: flex;
+}
+.qa-slider .slick-list{
+    overflow: hidden;
+}
+.qa-slider .slick-arrow{
+    position: absolute;
+    z-index: 1;
+    top:0;
+    font-size: 0;
+    width: 16px;
+    height: 26px;
+    margin-top:-70px;
+}
+.qa-slider .slick-arrow.slick-prev{
+    background-image: url(../img/card-slider/arrow-lft.png);
+    background-color:transparent;
+    right:4%;
+}
+.qa-slider .slick-arrow.slick-next{
+    background-image: url(../img/card-slider/arrow-rgt.svg);
+    right:1%;
+    background-color:transparent;
+}
+.qa-item{
+    width: 380px;
+    height: 519px;
+    background-color: #f6f8fb;
+    margin: 0 15px;
+    padding: 24px 27px 42px 26px;
+    display: flex;
+    flex-direction: column;
+}
+.qa-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.qa-subtitle{
+    color: #757e8a;
+    font-family: "PF BeauSans Pro - Italic";
+    font-size: 15px;
+    line-height: 1.2;
+}
+.qa-item-title{
+    font-family: "PF BeauSans Pro - Bold";
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #14427a;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 35px;
+}
+.qa-answer{
+    color: #757e8a;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom:30px;
+}
+.qa-button{
+    width: 185px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid #14427a;
+    background-color:transparent;
+    color: #14427a;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin-top:40px;
+}
+.qa-button:hover{
+    background-color: #14427a;
+    color:white;
+}
+.footer-wrapper{
+    height: 440px;
+    background-color: #14427a;
+    background-image: url(../img/footer/footer-bg.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    margin-top:70px;
+    margin-bottom:20px;
+    width: inherit;
+}
+.footer-row-first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 50px;
+    width: 60%;
+}
+.footer-row-second-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+}
+.footer-logo-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.footer-copyright{
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 15px;
+    font-weight: 400;
+    margin:31.5px 0;
+}
+.second-child-icon{
+    margin: 0 36.5;
+}
+.footer-icon-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-inline-start:0;
+    margin-block-start:0;
+    margin-block-end:0;
+}
+.footer-nav li{
+    margin-bottom:20px;
+}
+.footer-nav-item{
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.about-nav-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.about-title{
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Bold";
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.about-nav{
+    padding-inline-start:18px;
+}
+.about-nav li{
+    list-style: disc;
+    color: #ffffff;
+    padding-left:3px;
+    margin-bottom:10px;
+}
+.about-nav-item{
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.services-nav-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.services-title{
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Bold";
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.services-nav{
+    padding-inline-start:18px;
+}
+.services-nav li{
+    list-style: disc;
+    color: #ffffff;
+    padding-left:3px;
+    margin-bottom:10px;
+}
+.services-nav-item{
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.footer-search-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-search-container input[type=submit]{
+    background-image: url(../img/footer/search-icon.png);
+    background-color: white;
+    height:14px;
+    width:14px;
+    border: none;
+    margin-left:50px;
+}
+.footer-search-container input[type=search]{
+    border:none;
+    background-color: #fff;
+    color: #777e8a;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 15px;
+    font-weight: 400;
+}
+.footer-search-container input[type=search]::placeholder{
+    
+    color: #777e8a;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 15px;
+    font-weight: 400;
+}
+.footer-search-container .hat-form{
+    width: 280px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 0;
+}
+.footer-search-item{
+    margin-bottom:27px !important;
+}
+.footer-phone-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer-phone-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left:13px;
+}
+.footer-phone-item{
+    color: #fff;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 22px;
+    font-weight: 700;
+}
+.footer-email-item{
+    color: #fff;
+    font-family: "PF BeauSans Pro - Italic";
+    font-size: 15px;
+    text-decoration: underline;
+    margin-top:6px;
+}
+.address-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.address-subtitle{
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 15px;
+    font-weight: 400;
+    margin-left:17px;
+}
+.address-subtitle span{
+    font-weight: 700;
+}
+.contact-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-text-block{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.confidential-link{
+    width:20%;
+    color: #ffffff;
+    font-family: "PF BeauSans Pro - Italic";
+    font-size: 14px;
+    text-decoration: underline;
+    margin-right:40px;
+}
+.footer-p{
+    color: #7ea1cc;
+    font-family: "PF BeauSans Pro - Regular";
+    font-size: 14px;
+    font-weight: 400;
+    width: 70%;
+}
+.small-plate-block{
+    display: flex;
+    flex-direction: row;
+}
+.burger{
+    display:none;
+}
+.small-plate-block{
+    width:50%;
+}
+.plate-deck-column{
+    width:50%;
+}
+.small-plate{
+    width: 100%;
+    background:no-repeat;
+    padding-right:52px;
+}
+@media (max-width:768px){
+    .nav-item_active:after{
+        display: none;
+    }
+    .burger{
+        display:block;
+        width: 30px;
+        height:20px;
+        z-index: 3;
+        margin-top:20px;
+        position: relative;
+        right:10%;
+    }
+    .burger-lock{
+        position:fixed;
+        left:87.5%;
+    }
+    .burger:before, .burger:after{
+        content:'';
+        background-color:#de0713;
+        position: absolute;
+        width: 100%;
+        height:2px;
+        left:0;
+        transition: all 0.3s ease 0s;
+    }
+    .burger:before{
+        top:0;
+        z-index: 3;
+    }
+    .burger:after{
+        bottom:0;
+        z-index: 3;
+    }
+    .burger span{
+        background-color:#de0713;
+        position: absolute;
+        width: 100%;
+        height:2px;
+        left:0;
+        top:9px;
+        z-index: 3;
+        transition: all 0.3s ease 0s;
+    }
+    .nav-row{
+        position:fixed;
+        top:-100%;
+        left:0;
+        width:100%;
+        height:100%;
+        background-color: #f1f2f6;
+        flex-direction: column; 
+        z-index: 2;
+        overflow: auto;
+    }
+    .burger.active-menu:before{
+        transform: rotate(45deg);
+        top:9px;
+    }
+    .burger.active-menu:after{
+        transform: rotate(-45deg);
+        bottom:9px;
+    }
+    .burger.active-menu span{
+        transform: scale(0);
+    }
+    .nav-row.active-menu{
+        top:0;
+    }
+    body.lock{
+        overflow: hidden;
+    }
+    .nav-item{
+        font-size: 24px;
+    }
+}
+@media (max-width:1230px){
+    .container{
+        max-width:970px;
+    }
+    .test-img{
+        display: none;
+    }
+    .card-slider-container{
+        max-width:970px;
+    }
+    .qa-slider-container{
+        max-width:970px;
+    }
+    .hat-item{
+        margin-right:0;
+        margin-left:0;
+    }
+    .hat-row{
+        justify-content: space-between;
+    }
+    .form-item{
+        margin-left:10px;
+    }
+    .standard-title-img{
+        display: none;
+    }
+    .standard-title-items{
+        margin-left:0;
+        text-align: center;
+    }
+    .card-slider .slick-list{
+    overflow: hidden;
+    }
+    .footer-row-first-child{
+        margin-right:0;
+    }
+}
+@media (max-width:992px){
+    .container{
+        height:inherit;
+        max-width:750px;
+    }
+    .card-slider-container{
+        max-width:750px;
+        height:452px;
+    }
+    .qa-slider-container{
+        max-width:750px;
+    }
+    .test-row{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .test-button{
+        border:2px solid #fff;
+    }
+    .test{
+        height: 260px;
+    }
+    .nav-item{
+        margin: 0 20px;
+    }
+    .hat-row{
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center;
+        height:inherit;
+    }
+    .hat-wrapper{
+        height:250px;
+    }
+    .icons-row{
+        height:auto;
+    }
+    .phone-container{
+        align-items: flex-start;
+    }
+    .form-item{
+        margin-left:0;
+    }
+    .plate-deck-wrapper{
+        height: 1200px;
+    }
+    .plate-deck-container{
+        flex-direction: column;
+    }
+    .small-plate-block{
+        width:100%;
+        height:50%
+    }
+    .plate-deck-column{
+        width:50%;
+        height:100%
+    }
+    .big-plate{
+        width:100%;
+        height:50%;
+        background-size: cover;
+    }
+    .small-plate{
+        width:100%;
+        height:50%;
+        background-size: cover;
+        margin:2px;
+    }
+    .small-plate-title-block{
+        margin: 20px 0 0 15px;
+    }
+    .pdcr{
+        margin-left:2px;
+    }
+    .pdcl{
+        margin-right:2px;
+    }
+    .qa-title{
+        text-align: center;
+    }
+    .footer-wrapper{
+        height:740px;
+    }
+    .footer-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-row-first-child{
+        width: 100%;
+    }
+    .footer-row-second-child{
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+}
+@media (max-width:767px){
+    .footer-wrapper{
+        height: 900px;
+    }
+    .footer-row-first-child{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 35%;
+    }
+    .footer-row{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .footer-row-second-child{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        width: 35%;
+    }
+    .footer-row-first-child div{
+        margin-bottom: 20px;
+    }
+    .footer-row-first-child ul{
+        margin-bottom: 20px;
+    }
+    .footer-row-second-child ul{
+        margin-top: 20px;
+    }
+    .container{
+        max-width:none;
+    }
+    .card-slider-container{
+        max-width:480px;
+    }
+    .qa-slider-container{
+        max-width:480px;
+    }
+    .slider .slider-item{
+        height:400px;
+    }
+    .slider-wrapper{
+        height:400px;
+    }
+    .standard-title-items{
+        font-size: 28px;
+    }
+    .test-subtitle{
+        text-align: center;
+        margin:0;
+    }
+    .test-button{
+        margin:0;
+    }
+    .footer-text-block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .confidential-link{
+        text-align: center;
+        margin-bottom: 15px;
+        width: 80%;
+    }
+    .footer-p{
+        text-align: center;
+        margin:0;
+        width:100%;
+    }
+}
+@media (max-width:481px){
+    .card-slider-container{
+        max-width:320px;
+    }
+    .qa-slider-container{
+        max-width:320px;
+    }
+    .test-button{
+        border:none;
+    }
+    .test{
+        height: 290px;
+    }
+    .plate-deck-wrapper{
+        height:1600px;
+    }
+    .small-plate-block{
+        flex-direction: column;
+        height:75%;
+    }
+    .plate-deck-column{
+        width:100%;
+        height:50%;
+    }
+    .big-plate{
+        width:100%;
+        height:25%;
+        background-size: cover;
+        padding: 20px 0 0 15px;
+    }
+    .small-plate{
+        width:100%;
+        height:100%;
+        background-size: cover;
+        margin:2px;
+    }
+    .small-plate-title-block{
+        margin: 20px 0 0 15px;
+    }
+    .big-plate-header-block img{
+        display: none;
+        
+    }
+    .big-plate-button{
+        display:none;
+    }
+    .small-plate-empty{
+       display:none; 
+    }
+    .big-plate-title-block{
+        margin-left:0;
+    }
+    .big-plate-subtitle{
+        margin-top:53px;
+    }
+    .pdcr{
+        margin-left:0;
+    }
+    .pdcl{
+        margin-right:0;
+    }
+    .card-slider .slick-list{
+    overflow: hidden;
+    }
+    .footer-row{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer-row-first-child{
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+    .footer-row-second-child{
+        width: 100%;
+        align-items: center;
+    }
+    .footer-wrapper{
+        height: 1410px;
+    }
+    .about-nav-container{
+        margin-left:-35px;
+    }
+}
+

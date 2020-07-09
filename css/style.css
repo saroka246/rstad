@@ -136,6 +136,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-top:25px;
     display: table;
 }
+.nav-item>a{
+    color: #14427a;
+}
 .nav-item>a:hover{
     color:#de0713;
 }
